@@ -1036,3 +1036,22 @@ function lasttWord(f) {
   console.log(array);
   }
   bubleSort()
+
+
+
+   // program 45
+// Write a JavaScript program which returns a subset of a string.   
+// Sample Data: dog
+// Expected Output: ["d", "do", "dog", "o", "og", "g"]
+
+function subset() {
+    var string='Dogs'
+    var array=[]
+    for(let x=0;x<string.length;x++){
+      for(let y=x+1;y<=string.length;y++){
+          array.push(string.slice(x,y))
+        }
+      }
+      console.log("Subset Of Given String Is:",array);
+  }
+  subset()
