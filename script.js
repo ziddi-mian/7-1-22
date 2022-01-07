@@ -763,3 +763,28 @@ function lasttWord(f) {
   }
   countWord("i")
   
+
+
+
+  // program 33
+  // Write a js program to remove last occurrence of a word from string.
+  function removeLast(word) {
+    var string='i Love My Country i Pakistan'
+   var array=string.split(" ")
+   var yess=0
+    for(let x=array.length-1;x>=0;x--){
+           if (array[x]==word) {
+             array.splice(x,1)
+             yess++
+             break
+            }
+          }
+        var news=array.join(" ")
+          if (yess>0) {
+      console.log("After Removing from last",word, "Word:",news); 
+       }
+       else{
+         console.log("Given Word Is Not Found In String");
+       }
+  }
+  removeLast("Pakistan")
