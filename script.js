@@ -253,3 +253,31 @@ function palindrom() {
     }
   }
   palindrom();
+
+
+
+
+  // program 13
+// Write a js program to reverse order of words in a given string
+
+function wordReverse() {
+    var string = "i love my country";
+    var concate = "";
+    var word = "";
+    var y = string.length;
+    for (let x = string.length - 1; x >= 0; x--) {
+      if (string.charAt(x) == " ") {
+        word = string.slice(x + 1, y);
+        concate = concate.concat(word);
+        concate = concate.concat(" ");
+        y = x;
+      }
+    }
+    if (y >= 0) {
+      word = string.slice(0, y);
+      concate = concate.concat(word);
+    }
+  
+    console.log("Reverse Of String Words:", concate);
+  }
+  wordReverse();
