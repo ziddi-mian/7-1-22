@@ -448,3 +448,45 @@ function highfrequency() {
     console.log("Frequency Of", frearray, "Is ", time);
   }
   highfrequency();
+
+
+
+
+   // program 19
+// Write a js program to find lowest frequency character in a string.
+function lowfrequency() {
+    var string = "i Love pakistan pakistan is my country";
+    var frearray = [];
+    var max, time, pre;
+    max = 1;
+    var count = 0;
+    for (let x = 0; x < string.length; x++) {
+      if (string.charAt(x) != " ") {
+        for (let y = 0; y < string.length; y++) {
+          if (string.charAt(x) == string.charAt(y)) {
+            count++;
+          }
+        }
+        if (max > count) {
+          time = count;
+          frearray.push(string.charAt(x));
+          pre = max;
+          max = count;
+        } else if (max == count) {
+          time = count;
+          frearray.push(string.charAt(x));
+        }
+  
+        count = 0;
+      }
+    }
+    for (let z = 0; z < frearray.length; z++) {
+      for (let x = z + 1; x < frearray.length; x++) {
+        if (frearray[z] == frearray[x]) {
+          frearray.splice(x, 1);
+        }
+      }
+    }
+    console.log("Frequency Of", frearray, "Is ", time);
+  }
+  lowfrequency();
