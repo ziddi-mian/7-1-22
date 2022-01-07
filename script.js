@@ -1183,3 +1183,40 @@ function character() {
     console.log(check);
     }
     character()
+
+
+
+       //                          Switch Statement
+    
+    // program 1
+    // Write a js program to print day of week name using switch case
+    function dayOfWeek(x) {
+        switch (x) {
+          case 1:
+             console.log("Sunday");
+            break;
+          case 2:
+             console.log("Monday");
+            break;
+          case 3:
+             console.log("Tuseday");
+            break;
+          case 4:
+             console.log("Wednesday");
+            break;
+          case 5:
+             console.log("Thursday");
+            break;
+          case 6:
+             console.log("Friday");
+            break;
+          case 7:
+             console.log("Saturday");
+            break;
+        
+          default:
+            console.log("Enter Valid Day Number");
+            break;
+        }
+      }
+      dayOfWeek(6)
