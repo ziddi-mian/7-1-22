@@ -281,3 +281,26 @@ function wordReverse() {
     console.log("Reverse Of String Words:", concate);
   }
   wordReverse();
+
+
+
+   // program 14
+// Write a js program to find first occurrence of a character in a given string
+
+function Occurrenc() {
+    var string = "I Love Pakistan";
+    var occur;
+    for (let x = 0; x < string.length; x++) {
+      if (x == 0 && string.charAt(x) != " ") {
+        occur = string.charAt(x);
+        break;
+      } else if (string.charAt(x) == " " && x + 1 < string.length) {
+        if (string.charAt(x + 1) != " ") {
+          occur = string.charAt(x + 1);
+          break;
+        }
+      }
+    }
+    console.log("first occurrence Character:", occur);
+  }
+  Occurrenc();
