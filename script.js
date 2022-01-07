@@ -203,3 +203,21 @@ function words() {
     console.log("total Words", pre);
   }
   words();
+
+
+
+  
+  // program 11
+// Write a js program to find reverse of a string.
+
+function reverse() {
+    var string = "Usama";
+    var revers = "";
+    var sav;
+    for (let x = string.length; x >= 0; x--) {
+      sav = string.charAt(x);
+      revers = revers.concat(sav);
+    }
+    console.log("After Reverse The String:", revers);
+  }
+  reverse();
