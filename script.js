@@ -143,3 +143,34 @@ function check() {
     );
   }
   check();
+
+
+
+  // program 9
+// Write a js program to count total number of vowels and consonants in a string.
+function vowelNumbers() {
+    var string = " pakistan";
+    var vowl = (consonant = 0);
+    for (let x = 0; x < string.length; x++) {
+      var char = string.charAt(x);
+      if (
+        char == "a" ||
+        char == "A" ||
+        char == "e" ||
+        char == "E" ||
+        char == "i" ||
+        char == "I" ||
+        char == "o" ||
+        char == "O" ||
+        char == "u" ||
+        char == "U"
+      ) {
+        vowl++;
+      } else if (char >= "a" || char >= "A") {
+        consonant++;
+      }
+    }
+    console.log("Total Numbers Of Vowel In The String Is:", vowl);
+    console.log("Total Numbers Of Consonant In The String Is:", consonant);
+  }
+  vowelNumbers();
