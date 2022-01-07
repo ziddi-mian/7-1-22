@@ -933,3 +933,24 @@ function lasttWord(f) {
     
   }
   deleteobj()
+
+
+
+
+   // program 41
+  // Write a JavaScript program to get the length of a JavaScript object.   
+  // Sample object :
+  // var student = {
+  // name : "David Rayy",
+  // sclass : "VI",
+  // rollno : 12 };
+  
+  function lengthobj() {
+    var student = {
+      name : "David Rayy",
+      sclass : "VI",
+      rollno : 12 };
+      var key=Object.keys(student)
+      console.log("length Of object Is:",key.length);
+  }
+  lengthobj()
