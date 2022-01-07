@@ -831,3 +831,22 @@ function lasttWord(f) {
     
   }
   trimSpace()
+
+
+
+  // program 36
+  // Write a js program to trim trailing white space characters from given string.
+  function trailingSpace() {
+    var string='       I love my country pakistan      '
+    var array=string.split(" ")
+    for(let x=0;x<array.length;x++){
+      if (array[array.length-1]=="") {
+        array.pop()     
+      }
+      
+    }
+    var news=array.join(" ")
+    console.log("After Removing Trailing space:",news);
+    
+  }
+  trailingSpace()
