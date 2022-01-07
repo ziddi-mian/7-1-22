@@ -221,3 +221,35 @@ function reverse() {
     console.log("After Reverse The String:", revers);
   }
   reverse();
+
+
+
+   // program 12
+// Write a js program to check whether a string is palindrome or not.
+
+function palindrom() {
+    var string = "Pakistan";
+    var check = 0;
+    var rev = "";
+    var sav;
+    for (let x = string.length; x >= 0; x--) {
+      sav = string.charAt(x);
+      rev = rev.concat(sav);
+    }
+    for (let x = 0; x < string.length; x++) {
+      if (string.charAt(x) == rev.charAt(x)) {
+        check++;
+      }
+    }
+    if (check == string.length) {
+      console.log("Given String Is Palindrom:String=", string, ", Reverse=", rev);
+    } else {
+      console.log(
+        "Given String Is Not Palindrom:String=",
+        string,
+        ", Reverse=",
+        rev
+      );
+    }
+  }
+  palindrom();
