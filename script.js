@@ -665,3 +665,27 @@ function allAccur(char) {
     console.log("After Replacing ",t," With ",w," String is:",news);
   }
   repelaceAll("a","x")
+
+
+
+  // program 28
+  // Write a js program to find first occurrence of a word in a given string.
+  
+  function firstWord(f) {
+    var string='I Love My Country Pakistan'
+   var array=string.split(" ")
+   var yess=0
+    for(let x=0;x<array.length;x++){
+           if (array[x]==f) {
+             x++
+             console.log(f," Is Found At Position",x," From Start");
+             yess++
+             break
+           }
+    }
+    if (yess==0) {
+      
+      console.log("Given Word Is Not Found In STring");
+    }
+  }
+  firstWord("I")
