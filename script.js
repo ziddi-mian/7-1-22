@@ -114,3 +114,32 @@ function togalcas() {
     console.log("After Togal: ", z);
   }
   togalcas();
+
+
+
+  // program 8
+// a js program to toggle case of each character of a string.
+function check() {
+    var string = "pakistan123@@usama";
+    var alpha = (digit = special = 0);
+    for (let x = 0; x < string.length; x++) {
+      var chec = string.charAt(x);
+      if (chec >= "a" || chec >= "A") {
+        alpha++;
+      } else if (chec >= 0 || chec <= 0) {
+        digit++;
+      } else {
+        special++;
+      }
+    }
+  
+    console.log(
+      digit,
+      "No Of Digits",
+      alpha,
+      "No Of Alphabats ",
+      special,
+      "No Of Special Characters"
+    );
+  }
+  check();
