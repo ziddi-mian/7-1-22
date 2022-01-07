@@ -304,3 +304,28 @@ function Occurrenc() {
     console.log("first occurrence Character:", occur);
   }
   Occurrenc();
+  
+
+
+
+   // program 14(Extra Logic)
+  // Write a js program to find first occurrence of a character of word in a given string
+  
+  function Occurrence() {
+    var string = "I Love Pakistan";
+    var occur = [];
+    for (let x = 0; x < string.length; x++) {
+      if (x == 0 && string.charAt(x) != " ") {
+        occur.push(string.charAt(x));
+      } else if (string.charAt(x) == " ") {
+        if (string.charAt(x + 1) != " " && x + 1 < string.length) {
+          occur.push(string.charAt(x + 1));
+        }
+      }
+    }
+    console.log(
+      "first occurrence of a character in a given word of string:",
+      occur
+    );
+  }
+  Occurrence();
