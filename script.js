@@ -92,3 +92,25 @@ function lowercase() {
     console.log("After Conversion Into Uppercase: ", lower);
   }
   lowercase();
+
+
+   // program 7
+// Write a js program to toggle case of each character of a string.
+function togalcas() {
+    var string1 = "Muhammad UsaMA";
+    var alpha = "";
+    var z = "";
+    var togal;
+    for (let x = 0; x < string1.length; x++) {
+      alpha = string1.charAt(x);
+      if (alpha >= "a") {
+        var y = alpha.toUpperCase();
+        z = z.concat(y);
+      } else {
+        var y = alpha.toLowerCase();
+        z = z.concat(y);
+      }
+    }
+    console.log("After Togal: ", z);
+  }
+  togalcas();
