@@ -587,3 +587,28 @@ function allAccur(char) {
   }
   allAccur("a");
   
+
+
+
+  // program 24
+  // Write a js program to remove all repeated word from a given string.
+  
+  function allword() {
+    var string='i love pakistan.pakistan is,my country.i like it is'
+    var newarray=[]
+    var array=string.split(".")
+    var news=array.join(" ")
+    newarray=news.split(",")
+    var news1=newarray.join(" ")
+    var newarray1=news1.split(" ")
+    for(let x=0;x<newarray1.length;x++){
+      for(let y=x+1;y<newarray1.length;y++)
+            if (newarray1[x]==newarray1[y]) {
+              newarray1.splice(y,1)
+            }
+    }
+    var result=newarray1.join(" ")
+    console.log("yesssssssss",result);
+      }
+  allword()
+  
