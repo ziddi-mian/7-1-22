@@ -329,3 +329,35 @@ function Occurrenc() {
     );
   }
   Occurrence();
+
+
+
+
+
+   // program 15
+// Write a js program to find last occurrence of a character in a given string.
+
+function lastOccure() {
+    string = " i Love  Pakistan";
+    if (string.length == 0) {
+      console.log("String Is Empty:");
+    } else if (string.charAt(string.length - 1) != " ") {
+      console.log(
+        "last occurrence of a character in a given string is:",
+        string.charAt(string.length - 1)
+      );
+    } else {
+      for (let x = string.length - 1; x >= 0; x--) {
+        if (string.charAt(x) != " ") {
+          console.log(
+            "last occurrence of a character in a given string is:",
+            string.charAt(x)
+          );
+          break;
+        } else if (x == 0) {
+          console.log("String Is Empty:");
+        }
+      }
+    }
+  }
+  lastOccure();
