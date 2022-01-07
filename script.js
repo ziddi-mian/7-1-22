@@ -850,3 +850,15 @@ function lasttWord(f) {
     
   }
   trailingSpace()
+
+
+
+   // program 37
+  // Write a js program to trim both leading and trailing white space characters from given string.
+  function trimBoth() {
+    var string='    I love my country pakistan      '
+    var news=string.trim()
+    console.log("After Removing Leading And Trailing White Space:",news);
+    
+  }
+  trimBoth()
