@@ -407,3 +407,44 @@ function allOccure() {
     console.log("Given Characters Accour:", count, " Times In Given String");
   }
   allOccure();
+
+
+
+
+   // program 18
+// Write a js program to find highest frequency character in a string.
+function highfrequency() {
+    var string = "i Love Pakistan.pakistan is my county";
+    var frearray = [];
+    var fre, time, pre;
+    var max = 0;
+    var count = 0;
+    for (let x = 0; x < string.length; x++) {
+      if (string.charAt(x) != " ") {
+        for (let y = 0; y < string.length; y++) {
+          if (string.charAt(x) == string.charAt(y)) {
+            count++;
+          }
+        }
+        if (max < count) {
+          time = count;
+          frearray.push(string.charAt(x));
+          pre = max;
+          max = count;
+        } else if (max == count) {
+          frearray.push(string.charAt(x));
+        }
+  
+        count = 0;
+      }
+    }
+    for (let z = 0; z < frearray.length; z++) {
+      for (let x = 1; x < frearray.length; x++) {
+        if (frearray[z] == frearray[x]) {
+          frearray.splice(x, 1);
+        }
+      }
+    }
+    console.log("Frequency Of", frearray, "Is ", time);
+  }
+  highfrequency();
