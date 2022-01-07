@@ -883,3 +883,29 @@ function lasttWord(f) {
     
   }
   extraSpace()
+
+
+
+
+  // object 
+  
+
+  // program 39
+  // Write a JavaScript program to list the properties of a JavaScript object
+  // var student = {
+  // name : "David Rayy",
+  // sclass : "VI",
+  // rollno : 12 };
+  // Sample Output: name,sclass,rollno
+  
+  function properties() {
+    var student={
+      name:"David Rayy",
+      sclass:"VI",
+      rollno:12,
+    };
+    var news=Object.keys(student).join(",")
+    console.log("Output",news);
+    
+  }
+  properties()
