@@ -1272,3 +1272,49 @@ function character() {
       }
       dayInMonth(8)
 
+
+
+
+
+       // program 3
+    // Write a js program to check whether an alphabet is vowel or consonant using switch case.
+    function vowel(x) {
+        switch (x) {
+          case 'a':
+            console.log(x," Is Vowel");
+            break;
+          case 'A':
+            console.log(x," Is Vowel");
+            break;
+          case 'e':
+            console.log(x," Is Vowel");
+            break;
+          case 'A':
+            console.log(x," Is Vowel");
+            break;
+          case 'i':
+            console.log(x," Is Vowel");
+            break;
+          case 'I':
+            console.log(x," Is Vowel");
+            break;
+          case 'o':
+            console.log(x," Is Vowel");
+            break;
+          case 'O':
+            console.log(x," Is Vowel");
+            break;
+          case 'u':
+            console.log(x," Is Vowel");
+            break;
+          case 'U':
+            console.log(x," Is Vowel");
+            break;
+        
+          default:
+            console.log(x," Is Consonant");
+            break;
+        }
+        
+      }
+      vowel('k') 
