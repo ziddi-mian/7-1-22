@@ -518,3 +518,25 @@ function frequency() {
     }
   }
   frequency();
+
+
+
+
+  // program 2
+  // Write a js program to remove first occurrence of a character from string
+  
+  function firstAccur(char) {
+    var string = "i love pakistan";
+    var start, end;
+    var newstring = "";
+    for (let x = 0; x < string.length; x++) {
+      if (string.charAt(x) == char) {
+        start = string.slice(0, x);
+        end = string.slice(x + 1, string.length);
+        break;
+      }
+    }
+    newstring = start.concat(end);
+    console.log("After Removing:", char, ",New String Is:", newstring);
+  }
+  firstAccur("a");
