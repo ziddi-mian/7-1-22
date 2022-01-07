@@ -71,3 +71,14 @@ function compare() {
     }
   }
   compare();
+
+
+
+  // program 5
+// Write a js program to convert lowercase string to uppercase.
+function uppercase() {
+    var string1 = "usamA azam";
+    var upper = string1.toUpperCase();
+    console.log("After Conversion Into Uppercase: ", upper);
+  }
+  uppercase();
