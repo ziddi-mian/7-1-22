@@ -647,3 +647,21 @@ function allAccur(char) {
     console.log("After Replacing ",t," With ",w," String is:",news);
   }
   repelacelast("i","a")
+
+
+
+   // program 27
+  // Write a js program to replace all occurrences of a character with another in a string.
+  
+  function repelaceAll(t,w) {
+    var string='i love my pakistan'
+    var aray=string.split("")
+    for(let x=0;x<string.length;x++){
+      if (aray[x]==t) {
+          aray[x]=w
+        }
+      }
+      var news=aray.join("")
+    console.log("After Replacing ",t," With ",w," String is:",news);
+  }
+  repelaceAll("a","x")
