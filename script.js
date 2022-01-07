@@ -689,3 +689,26 @@ function allAccur(char) {
     }
   }
   firstWord("I")
+
+
+
+   // program 29
+// Write a js program to find last occurrence of a word in a given string.
+function lasttWord(f) {
+    var string='I Love My Country Pakistan'
+   var array=string.split(" ")
+   var yess=0
+    for(let x=array.length-1;x>=0;x--){
+           if (array[x]==f) {
+             x++
+             console.log(f," Is Found At Position",x);
+             yess++
+             break
+           }
+    }
+    if (yess==0) {
+      
+      console.log("Given Word Is Not Found In STring");
+    }
+  }
+  lasttWord("Country")
