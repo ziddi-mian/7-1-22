@@ -490,3 +490,31 @@ function lowfrequency() {
     console.log("Frequency Of", frearray, "Is ", time);
   }
   lowfrequency();
+
+
+
+
+  // program 20
+// Write a js program to count frequency of each character in a string
+function frequency() {
+    var string = "i Love pakistan pakistan is my country";
+    var frearray = [];
+    var count = 1;
+  
+    for (let x = 0; x < string.length; x++) {
+      if (string.charAt(x) != " ") {
+        frearray.push(string.charAt(x));
+      }
+    }
+    for (let z = 0; z < frearray.length; z++) {
+      for (let x = z + 1; x < frearray.length; x++) {
+        if (frearray[z] == frearray[x]) {
+          frearray.splice(x, 1);
+          count++;
+        }
+      }
+      console.log(frearray[z], " Is Repeated", count, "Times");
+      count = 1;
+    }
+  }
+  frequency();
