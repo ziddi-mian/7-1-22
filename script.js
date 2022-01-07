@@ -612,3 +612,19 @@ function allAccur(char) {
       }
   allword()
   
+
+
+  // program 25
+  // Write a js program to replace first occurrence of a character with another in a string.
+  
+  function repelace(t,w) {
+    var string='i love my country pakistan'
+    for(let x=0;x<string.length;x++){
+      if (string.charAt(x)==t) {
+        var news=string.replace(t,w)
+        break
+      }
+    }
+    console.log("After Replacing ",t," With ",w," String is:",news);
+  }
+  repelace("i","You")
