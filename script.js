@@ -1097,3 +1097,27 @@ function subset() {
     console.log(Object.values(object1));
   }
   allValue()
+
+
+
+
+  // program 50
+  // Write a JavaScript function to check whether an object contains given property. 
+  function property(obj) {
+    student={
+      sName:'M.Usama',
+      sFatherName:'M.Azam',
+      class:"BsCs",
+      section:"Evening",
+      rollno:"11931"
+    }
+    if (student.hasOwnProperty(obj)) {
+      console.log("Student Object Has This Property");
+    }
+    else{
+     console.log("Student Object Has Not This Property");
+ 
+    }
+ 
+  }
+  property('class')
