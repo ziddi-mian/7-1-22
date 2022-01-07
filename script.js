@@ -46,4 +46,28 @@ function concate() {
     console.log("After concating:", concate);
   }
   concate();
+
   
+
+  // program 4
+// Write a js program to compare two strings.
+function compare() {
+    var string1 = "usama azam";
+    var string2 = "usama azam";
+    var length1 = string1.length;
+    var length2 = string2.length;
+    var check = 0;
+    if (length1 === length2) {
+      for (let x = 0; x < length1; x++) {
+        if (string1.charAt(x) == string2.charAt(x)) {
+          check++;
+        }
+      }
+    }
+    if (check == length1) {
+      console.log("Strings Are Equal");
+    } else {
+      console.log("Strings Are Not Equal");
+    }
+  }
+  compare();
