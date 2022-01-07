@@ -1381,3 +1381,36 @@ function character() {
           }
       }
       number1(0)
+
+
+
+       // program 7
+// Write a js program to find roots of a quadratic equation using switch case.
+function root(a,b,c) {
+    var dis=b*b-4*a*c
+    switch (dis>0) {
+      case true:
+        var x1=(-b + Math.sqrt(dis)) / (2 * a);
+        var x2=(-b - Math.sqrt(dis)) / (2 * a);
+        console.log("Roots Are:",x1,",",x2);
+        break;
+    
+      default:
+        switch (dis<0) {
+          case true:
+            var x1=(-b / (2 * a)).toFixed(2);
+            var x2=(Math.sqrt(-dis) / (2 * a)).toFixed(2);
+        console.log("Roots Are:",x1,",",x2);
+  
+            break;
+        
+          default:
+            var x1=x2=[-b / (2 * a)];
+        console.log("Roots Are:",x1,",",x2);
+            
+            break;
+        }
+        break;
+    }
+  }
+  root(1,5,5)
