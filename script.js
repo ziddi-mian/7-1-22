@@ -811,3 +811,23 @@ function lasttWord(f) {
          console.log("Given Word Is Not Found In String");
        }
   }allOccur("i")
+
+
+
+  // program 35
+  // Write a js program to trim leading white space characters from given string.
+  function trimSpace() {
+    var string='       I love my country pakistan'
+    var array=string.split(" ")
+    for(let x=0;x<array.length;x++){
+      if (array[x]=="") {
+        array.shift()  
+        x--    
+      }
+      
+    }
+    var news=array.join(" ")
+    console.log("After Removing Leading space:",news);
+    
+  }
+  trimSpace()
