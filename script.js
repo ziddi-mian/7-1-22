@@ -1081,3 +1081,19 @@ function subset() {
     
   }
   console.log(objectname(Array));
+
+
+
+
+  // program 49
+  // Write a JavaScript function to retrieve all the values of an object's properties.
+  function allValue() {
+    var object1={
+      name:'Usama',
+      fatherName:'Azam',
+      class:'BsCs',
+      rollno:11931,
+    }
+    console.log(Object.values(object1));
+  }
+  allValue()
