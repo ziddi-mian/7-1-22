@@ -34,3 +34,16 @@ function concate() {
     console.log("After concating:", concate);
   }
   concate();
+
+
+
+   // program 3
+// Write a js program to concatenate two strings.
+function concate() {
+    var string1 = "Muhammad";
+    var string2 = " Usama Azam";
+    var concate = string1.concat(string2);
+    console.log("After concating:", concate);
+  }
+  concate();
+  
