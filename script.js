@@ -174,3 +174,32 @@ function vowelNumbers() {
     console.log("Total Numbers Of Consonant In The String Is:", consonant);
   }
   vowelNumbers();
+
+
+
+  // program 10
+// Write a js program to count total number of words in a string
+
+function words() {
+    var string = "That Is Called Logic @";
+    var pre = 0;
+    var word = 1;
+    for (let x = 0; x < string.length; x++) {
+      var char = string.charAt(x);
+      var next = string.charAt(x + 1);
+      var len = string.length;
+      if (len == 0) {
+        console.log("String is EMpty");
+      } else if ((len = !0)) {
+        if (char == " ") {
+        } else {
+          if (next == " " || x + 1 == string.length) {
+            pre = word;
+            word++;
+          }
+        }
+      }
+    }
+    console.log("total Words", pre);
+  }
+  words();
