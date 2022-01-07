@@ -561,3 +561,29 @@ function frequency() {
     console.log("After Removing:", char, ",New String Is:", newstring);
   }
   lastAccur("a");
+
+
+
+  // program 23
+// Write a js program to remove all occurrences of a character from string.
+
+function allAccur(char) {
+    var string, h;
+    var newstring = [];
+    newstring[0] = "i love pakistan.pakistan is my country";
+    var g = 0;
+    for (let x = 0; x < newstring[0].length; x++) {
+      if (newstring[g].charAt(x) == char) {
+        {
+          h = g;
+          g++;
+          newstring[g] = newstring[h].replace(char, "");
+        }
+      }
+    }
+  
+    string = newstring[newstring.length - 1];
+    console.log("After Removing All:", char, ",New String Is:", string);
+  }
+  allAccur("a");
+  
