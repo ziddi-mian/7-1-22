@@ -385,3 +385,25 @@ function Search() {
     console.log("Given Characters Matches:", count, " Times In Given String");
   }
   Search();
+
+
+
+
+   // program 17
+// Write a js program to count occurrences of a character in given string
+function allOccure() {
+    var string = "i Love Pakistan is my country o";
+    var checke = "i";
+    var count = 0;
+    if (string.length == 0) {
+      console.log("String Is Empty.");
+    } else {
+      for (var x = 0; x < string.length; x++) {
+        if (string.charAt(x) == checke) {
+          count++;
+        }
+      }
+    }
+    console.log("Given Characters Accour:", count, " Times In Given String");
+  }
+  allOccure();
